@@ -1,12 +1,12 @@
 {
-  "version": "12.5.2",
+  "version": "12.5.3",
   "date": "2026-11-17",
-  "notes": "v12.5.2: bigger scrollbars in all test lists, scrollbar added to the results editor, cleaner action buttons. Install over the old version - your data is kept.",
-  "url": "https://github.com/musabs144-png/auralab-updates/releases/download/v12.5.2/AuraLab_Pro_v12.5.2_Release.zip",
+  "notes": "v12.5.3: automatic updates are now enabled for every client by default. Includes the bigger list scrollbars and cleaner patient action buttons from v12.5.2. Install over the old version - your data is kept.",
+  "url": "https://github.com/musabs144-png/auralab-updates/releases/download/v12.5.3/AuraLab_Pro_v12.5.3_Release.zip",
   "min_version": "",
   "sha256": {
-    "AuraLab_Pro_v12.5.2_Release.zip": "91603e0f258912e4ebf71df9c779a56f5088db40a84ff3602ddc842fb1669d3d",
-    "AuraLab_Setup.exe": "da114f7e5973834dd5a9ac373b7af6833cc8234886b6a7179d50cf6e710c4a41"
+    "AuraLab_Pro_v12.5.3_Release.zip": "76d26ec91cdbf6ea190eb7e3a823923b1bd60a512ba976d50adbac1c7eec37e2",
+    "AuraLab_Setup.exe": "d1efc9e7c91e000603827743547d4443b3a0c6c632af01d709e50417a154209f"
   },
-  "size_bytes": 112106080
+  "size_bytes": 112107750
 }
