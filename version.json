@@ -1,12 +1,22 @@
-{
-  "version": "12.5.3",
-  "date": "2026-11-17",
-  "notes": "v12.5.3: automatic updates are now enabled for every client by default. Includes the bigger list scrollbars and cleaner patient action buttons from v12.5.2. Install over the old version - your data is kept.",
-  "url": "https://github.com/musabs144-png/auralab-updates/releases/download/v12.5.3/AuraLab_Pro_v12.5.3_Release.zip",
-  "min_version": "",
-  "sha256": {
-    "AuraLab_Pro_v12.5.3_Release.zip": "76d26ec91cdbf6ea190eb7e3a823923b1bd60a512ba976d50adbac1c7eec37e2",
-    "AuraLab_Setup.exe": "d1efc9e7c91e000603827743547d4443b3a0c6c632af01d709e50417a154209f"
-  },
-  "size_bytes": 112107750
-}
+@echo off
+
+chcp 65001 >nul
+title AuraLab Pro 12.5.4 - Setup
+cd /d "%~dp0"
+echo.
+echo   ============================================================
+echo      AURA LAB PRO  12.5.4   -   Start Setup
+echo   ============================================================
+echo.
+powershell -NoProfile -ExecutionPolicy Bypass -File "%~dp0install_cert.ps1"
+set CERT=%ERRORLEVEL%
+echo.
+echo   Press any key to start the installer ...
+pause >nul
+if exist "%~dp0AuraLab_Setup.exe" (
+    start "" "%~dp0AuraLab_Setup.exe"
+) else (
+    echo   ERROR: AuraLab_Setup.exe is missing next to this file.
+    pause
+)
+exit /b 0
