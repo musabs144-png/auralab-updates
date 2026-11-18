@@ -1,22 +1,12 @@
-@echo off
-
-chcp 65001 >nul
-title AuraLab Pro 12.5.4 - Setup
-cd /d "%~dp0"
-echo.
-echo   ============================================================
-echo      AURA LAB PRO  12.5.4   -   Start Setup
-echo   ============================================================
-echo.
-powershell -NoProfile -ExecutionPolicy Bypass -File "%~dp0install_cert.ps1"
-set CERT=%ERRORLEVEL%
-echo.
-echo   Press any key to start the installer ...
-pause >nul
-if exist "%~dp0AuraLab_Setup.exe" (
-    start "" "%~dp0AuraLab_Setup.exe"
-) else (
-    echo   ERROR: AuraLab_Setup.exe is missing next to this file.
-    pause
-)
-exit /b 0
+{
+  "version": "12.5.7",
+  "date": "2026-11-18",
+  "notes": "▸ المساعد الذكي لإدخال النتائج (بدون إنترنت)\n• مساعد عربي داخل البرنامج: زر «مساعد» في الشريط العلوي، وأمر في قائمة «…»،\nوزر داخل نافذة الدعم. يفتح نافذة تشرح لكل خانة: ماذا تقيس، ما القيمة الطبيعية،\nوكيف تكتب النتيجة — مع أمثلة جاهزة.\n• كل التحاليل الأساسية: SFA، GUE، GSE، الاختبارات السريعة، الزرع والحساسية،\nوالتحاليل العامة. في SFA توجد كل الحقول بما فيها الحجم، اللون، التميّع، العدد،\nالحركة التقدمية وغير التقدمية، الخيوية، الأشكال الطبيعية، الكريات والتلازن.\n• إدراج فعلي: زر «إدراج» يضع القيمة المثال مباشرة في الخانة المفتوحة إن كان\nالقسم ظاهراً، وإلا ينسخها إلى الحافظة لتلصقها بعد فتح القسم. زر «نسخ» مستقل.\n• مساحة حساب: للسائل المنوي تحسب الحركة الكلية (PR + NP)، غير المتحركة",
+  "url": "https://github.com/musabs144-png/auralab-updates/releases/download/v12.5.7/AuraLab_Pro_v12.5.7_Release.zip",
+  "min_version": "",
+  "sha256": {
+    "AuraLab_Pro_v12.5.7_Release.zip": "84f379cc762747a51742186b073d6564bae322d1387f5e23924fc74f686922ce",
+    "AuraLab_Setup.exe": "aa6263944108ec4655709f688cd73a6d7b466f2777e69c3d765e89e915dcdb2f"
+  },
+  "size_bytes": 112289393
+}
